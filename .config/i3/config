@@ -38,6 +38,7 @@ exec --no-startup-id xrandr --output HDMI2 --auto --right-of eDP1
 
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
 
 ########################
 # keybindings          #
@@ -100,7 +101,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+q kill
 bindsym MOD1+F4 kill
 
-bindsym $mod+d exec --no-startup-id rofi -show run
+bindsym $mod+d exec --no-startup-id rofi -show drun
+bindsym $mod+Tab exec --no-startup-id rofi -show window
 
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
