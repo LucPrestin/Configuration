@@ -29,6 +29,13 @@ set $ws10 "10: Entertainment"
 
 set $refresh_i3status killall -SIGUSR1 i3status
 
+set $bg-color #2f343f
+set $inactive-bg-color #2f343f
+set $text-color #f3f4f5
+set $inactive-text-color #676e7d
+set $urgent-bg-color #e53935
+set $separator-color #757575
+
 ########################
 # startup applications #
 ########################
@@ -109,7 +116,7 @@ bindsym $mod+Tab exec --no-startup-id rofi -show window
 bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
-bindsym $mod+l exec ~/.config/i3/lock-screen.sh
+bindsym $mod+l exec i3lock --nofork --color="$bg-color" --pointer=default --show-failed-attempts
 
 ########################
 # auto moving windows  #
@@ -150,7 +157,7 @@ mode "$mode_power" {
     bindsym s mode "default"; exec systemctl suspend
     bindsym r mode "default"; exec reboot
     bindsym p mode "default"; exec systemctl poweroff
-    bindsym l mode "default"; exec ~/.config/i3/lock-screen.sh
+    bindsym l mode "default"; exec i3lock --nofork --color="$bg-color" --pointer=default --show-failed-attempts
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
@@ -168,14 +175,10 @@ gaps inner 5
 
 exec_always feh --bg-center ~/Pictures/Wallpapers/panorama-3629120.jpg
 
-set $bg-color #2f343f
-set $inactive-bg-color #2f343f
-set $text-color #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color #E53935
-set $separator-color #757575
+########################
+# window colors        #
+########################
 
-# window colors
 #                       border              background         text                 indicator
 client.focused          $bg-color           $bg-color          $text-color          #00ff00
 client.unfocused        $inactive-bg-color $inactive-bg-color $inactive-text-color #00ff00
