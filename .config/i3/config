@@ -118,6 +118,8 @@ bindsym $mod+Shift+r restart
 
 bindsym $mod+l exec i3lock --nofork --color="$bg-color" --pointer=default --show-failed-attempts
 
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+
 ########################
 # auto moving windows  #
 ########################
@@ -173,7 +175,8 @@ font pango:FreeSans, Font Awesome 5 Free, Font Awesome 5 Brands 11
 for_window [class=".*"] border pixel 0
 gaps inner 5
 
-exec_always feh --bg-center ~/Pictures/Wallpapers/panorama-3629120.jpg
+# Set background image
+exec_always --no-startup-id nitrogen --restore
 
 ########################
 # window colors        #
@@ -190,13 +193,15 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 ########################
 
 bar {
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf
+        status_command i3blocks -c ~/.config/i3blocks/config
+        tray_output primary
         position top
 	colors {
-		background $bg-color
+		background $inactive-bg-color
 	    	separator $separator-color
-		focused_workspace $bg-color $bg-color $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace $urgent-bg-color $urgent-bg-color $text-color
+		separator $inactive-text-color
+                focused_workspace $bg-color $bg-color $text-color
+                inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+                urgent_workspace $urgent-bg-color $urgent-bg-color $text-color
 	}
 }
