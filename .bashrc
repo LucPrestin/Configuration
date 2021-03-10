@@ -138,4 +138,4 @@ ex ()
   fi
 }
 
-source /home/luc/.shrc
+source $HOME/.rc

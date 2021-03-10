@@ -3,6 +3,7 @@ alias ssh-hpi-fs32='sudo ssh ssh-stud.hpi.uni-potsdam.de -l luc.prestin -L 5000:
 
 alias nom='~/.bin/nom/nom.sh'
 alias mensa='~/.bin/mensa/getMenue.sh'
+alias pscom='python3 ~/.bin/photo-management/main.py'
 
 alias please='sudo'
 
