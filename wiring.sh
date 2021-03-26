@@ -11,6 +11,7 @@ files=(
     .zlogout
     .zprofile
     .zshrc
+    .tmux.conf
 )
 
 for file in "${files[@]}"; do
