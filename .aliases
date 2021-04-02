@@ -12,7 +12,6 @@ alias system-upgrade='yay -Syu
 
 alias pcloud='~/.bin/pcloud/pcloud'
 
-alias godot='~/.bin/godot/Godot_v3.2.1-stable_x11.64'
 alias itchio-butler='~/.bin/itchio-butler/butler'
 
 alias thesis='~/Documents/ITSE/Bachelorarbeit/thesis.sh'
