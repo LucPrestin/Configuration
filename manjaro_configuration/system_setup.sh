@@ -35,6 +35,7 @@ pacman_packages=(
 	simple-scan
 	gnome-backgrounds
 	manjaro-printer
+	gnome-todo
 )
 
 yay_packages=(
