@@ -34,6 +34,7 @@ pacman_packages=(
 	solaar
 	simple-scan
 	gnome-backgrounds
+	manjaro-printer
 )
 
 yay_packages=(
