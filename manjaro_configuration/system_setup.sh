@@ -36,6 +36,7 @@ pacman_packages=(
 	gnome-backgrounds
 	manjaro-printer
 	gnome-todo
+	signal-desktop
 )
 
 yay_packages=(
