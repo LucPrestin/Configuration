@@ -24,6 +24,7 @@ pacman_packages=(
 	evolution
 	discord
 	supercollider
+	audacity
 	qjackctl
 	pd
 	v4l2loopback-dkms
