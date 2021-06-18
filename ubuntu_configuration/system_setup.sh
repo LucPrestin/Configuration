@@ -1,8 +1,9 @@
+#!/bin/bash
 apt_packages=( 
 	gcc
 	make
 	cmake
-	dpkg
+	build-essential
 	git
 	htop
 	tree
@@ -10,36 +11,37 @@ apt_packages=(
 	zsh
 	patch
 	vim
-    curl
 	chromium-browser
 	telegram-desktop
 	gnome-photos
 	musescore3
 	pdftk
 	texlive
-	duplicity
+	deja-dup
 	evolution
 	supercollider
 	audacity
 	qjackctl
 	puredata
 	v4l2loopback-dkms
-	obs-studio
 	anki
-	deja-dup
 	keepassxc
 	solaar
 	simple-scan
 	gnome-backgrounds
-	gnome-todo
-    gnome-tweaks
-	chrome-gnome-shell
-	gnome-shell-extensions
+	zoom
 )
 
 snap_packages=(
 	code
-    discord
+	discord
+	signal-desktop
+	typora
+	spotify
+)
+
+snap_classic_packages=(
+	slack
 )
 
 removeable_packages=()
@@ -58,6 +60,7 @@ sudo apt install ${apt_packages[*]}
 echo "//-------------- installing snap packages --------------//"
 
 sudo snap install ${snap_packages[*]}
+sudo snap install --classic ${snap_classic_packages[*]}
 
 echo "//-------------- removing packages --------------//"
 
