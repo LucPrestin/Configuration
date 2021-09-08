@@ -29,7 +29,10 @@ apt_packages=(
 	solaar
 	simple-scan
 	gnome-backgrounds
+	gnome-shell-extensions
+	chrome-gnome-shell
 	zoom
+	libproxy1-plugin-networkmanager 
 )
 
 snap_packages=(
