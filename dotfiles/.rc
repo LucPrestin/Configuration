@@ -1,7 +1,6 @@
-# android and flutter
-export PATH="$PATH:/home/luc/.bin/flutter/bin"
-export PATH="$PATH:/home/luc/.bin/Android/Sdk/build_tools/29.0.2/"
-export PATH="$PATH:/home/luc/.bin/Android/Sdk/platform_tools/"
+# android sdk
+export PATH="$PATH:/home/luc/.bin/Android/Sdk/build-tools/32.0.0"
+export PATH="$PATH:/home/luc/.bin/Android/Sdk/platform-tools"
 export PATH="$PATH:/home/luc/.bin/Android/Sdk/tools"
 
 # better yaourt colors
@@ -13,4 +12,4 @@ export PATH="$PATH:/home/luc/.rbenv/shims"
 
 source $HOME/.aliases
 
-[[ -s /home/luc/.cache/yay/autojump/pkg/autojump/etc/profile.d/autojump.sh ]] && source /home/luc/.cache/yay/autojump/pkg/autojump/etc/profile.d/autojump.sh
+. /usr/share/autojump/autojump.sh
