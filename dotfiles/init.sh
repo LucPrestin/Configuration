@@ -13,6 +13,7 @@ files=(
     .zprofile
     .zshrc
     .tmux.conf
+    .vimrc
 )
 
 for file in "${files[@]}"; do
