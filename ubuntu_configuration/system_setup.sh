@@ -32,6 +32,7 @@ apt_packages=(
 	gnome-shell-extensions
 	chrome-gnome-shell
 	zoom
+	autojump
 	libproxy1-plugin-networkmanager 
 )
 
