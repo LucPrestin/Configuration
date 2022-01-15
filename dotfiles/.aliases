@@ -9,8 +9,7 @@ alias please='sudo'
 
 alias vim='nvim'
 
-alias system-upgrade='yay -Syu
-	sudo pacman -Syu'
+alias system-upgrade='sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove'
 
 alias pcloud='~/.bin/pcloud/pcloud'
 
