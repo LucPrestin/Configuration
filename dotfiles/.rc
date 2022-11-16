@@ -13,3 +13,11 @@ export PATH="$PATH:/home/luc/.rbenv/shims"
 source $HOME/.aliases
 
 . /usr/share/autojump/autojump.sh
+
+# python poetry
+export PATH="$PATH:/home/luc/.local/bin"
+
+# graalvm
+export PATH="$PATH:/home/luc/.bin/graalvm-ce-java17-22.3.0/bin"
+
+
