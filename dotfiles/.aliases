@@ -1,4 +1,4 @@
-alias ssh-pi='ssh pi@192.168.1.129'
+alias ssh-pi='ssh pi@192.168.178.22'
 alias ssh-hpi-fs32='sudo ssh ssh-stud.hpi.uni-potsdam.de -l luc.prestin -L 5000:fs23:445'
 alias ssh-mp='ssh mpws2022rh1@172.16.64.141'
 
@@ -24,4 +24,8 @@ alias open='xdg-open'
 alias rails='bundle exec rails'
 
 alias native-image='mx -p /home/luc/Documents/Studium/Masterprojekt/graal/substratevm native-image'
+
+alias gs='git status'
+alias ga='git add'
+alias grc='git rebase --continue'
 

@@ -5,6 +5,12 @@ apt_packages=(
 	cmake
 	build-essential
 	git
+	code
+	discord
+	signal-desktop
+	telegram-desktop
+	obsidian
+	spotify
 	htop
 	tree
 	tmux
@@ -14,7 +20,7 @@ apt_packages=(
 	chromium-browser
 	telegram-desktop
 	gnome-photos
-	musescore3
+	musescore4
 	pdftk
 	texlive
 	deja-dup
@@ -25,6 +31,7 @@ apt_packages=(
 	puredata
 	v4l2loopback-dkms
 	anki
+	slack
 	keepassxc
 	solaar
 	simple-scan
@@ -34,20 +41,6 @@ apt_packages=(
 	zoom
 	autojump
 )
-
-snap_packages=(
-	code
-	discord
-	signal-desktop
-	typora
-	spotify
-)
-
-snap_classic_packages=(
-	slack
-)
-
-removeable_packages=()
 
 echo "//-------------- updating packages --------------//"
 
@@ -61,25 +54,6 @@ echo "//-------------- installing apt packages --------------//"
 for package in "${apt_packages[@]}" ;
 do
 	sudo apt install -y $package
-done
-
-echo "//-------------- installing snap packages --------------//"
-
-for package in "${apt_packages[@]}" ;
-do
-	sudo snap install $package
-done
-
-for package in "${apt_packages[@]}" ;
-do
-	sudo snap install --classic $package
-done
-
-echo "//-------------- removing packages --------------//"
-
-for package in "${apt_packages[@]}" ;
-do
-	sudo apt remove $package
 done
 
 echo "//-------------- installing oh-my-zsh --------------//"

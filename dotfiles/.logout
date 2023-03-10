@@ -1,1 +1,0 @@
-echo "down: $(date)" >> $HOME/Documents/Projects/Monitoring/uptime.log
