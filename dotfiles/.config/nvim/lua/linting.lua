@@ -5,5 +5,5 @@ require('lint').linters_by_ft = {
 		markdownlint = {'md'},
 }
 
-vim.opt.spellang={"de_de", "en_us", "en_uk", "cjk"}
+vim.opt.spelllang={"de_de", "en_us", "en_uk", "cjk"}
 vim.opt.spellsuggest={"best", 9}
