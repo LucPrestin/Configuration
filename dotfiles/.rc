@@ -17,8 +17,6 @@ export PATH="$PATH:$HOME/.local/bin"
 
 source $HOME/.aliases
 
-. /usr/share/autojump/autojump.sh
-
 # python poetry
 export PATH="$PATH:/home/luc/.local/bin"
 
