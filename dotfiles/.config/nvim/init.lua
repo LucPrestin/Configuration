@@ -1,0 +1,11 @@
+require('plugins')
+require('mason-config')
+require('editor-settings')
+require('code-completion')
+require('file-explorer')
+require('custom-keys')
+require('debugging')
+require('syntax-highlighting')
+require('file-finder')
+require('linting')
+
