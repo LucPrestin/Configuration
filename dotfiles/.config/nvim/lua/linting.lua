@@ -1,5 +1,8 @@
 require('lint').linters_by_ft = {
-	markdown = {'vale',}
+		eslint = {'js', 'jsx', 'ts', 'tsx', 'vue'},
+		flake8 = {'py'},
+		luacheck = {'lua'},
+		markdownlint = {'md'},
 }
 
 vim.opt.spellang={"de_de", "en_us", "en_uk", "cjk"}
