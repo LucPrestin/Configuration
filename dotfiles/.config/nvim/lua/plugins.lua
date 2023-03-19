@@ -7,9 +7,9 @@ return require('packer').startup(function(use)
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-nvim-lua'
 	use 'hrsh7th/cmp-nvim-lsp-signature-help'
-	use 'hrsh7th/cmp-vsnip'                             
-	use 'hrsh7th/cmp-path'                              
-	use 'hrsh7th/cmp-buffer'                            
+	use 'hrsh7th/cmp-vsnip'
+	use 'hrsh7th/cmp-path'
+	use 'hrsh7th/cmp-buffer'
 	use 'hrsh7th/vim-vsnip'
 	use {
 		'nvim-tree/nvim-tree.lua',
@@ -66,10 +66,5 @@ return require('packer').startup(function(use)
 		requires = "nvim-tree/nvim-web-devicons",
 		config = function() require("trouble").setup({}) end
 	}
-	use {
- 		"folke/trouble.nvim",
- 		requires = "nvim-tree/nvim-web-devicons",
- 		config = function() require("trouble").setup({}) end
-	}
-	use ' preservim/tagbar'
+	use 'preservim/tagbar'
 end)
