@@ -1,8 +1,8 @@
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use 'williamboman/mason.nvim'   
-        use 'williamboman/mason-lspconfig.nvim'
-        use 'neovim/nvim-lspconfig'
+	use 'williamboman/mason-lspconfig.nvim'
+	use 'neovim/nvim-lspconfig'
 	use 'hrsh7th/nvim-cmp' 
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/cmp-nvim-lua'
@@ -28,11 +28,11 @@ return require('packer').startup(function(use)
 			local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
 			ts_update()
 		end,
- 	}
- 	use {
- 	 	'nvim-telescope/telescope.nvim', 
- 	 	tag = '0.1.0',
-    		requires = { {'nvim-lua/plenary.nvim'} }
+	}
+	use {
+		'nvim-telescope/telescope.nvim', 
+		tag = '0.1.0',
+		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use {
 		'nvim-lualine/lualine.nvim',
@@ -54,9 +54,9 @@ return require('packer').startup(function(use)
 		"glepnir/lspsaga.nvim",
 		branch = "main",
 		config = function() require("lspsaga").setup({}) end,
-    		requires = {
-        		{"nvim-tree/nvim-web-devicons"},
-        		{"nvim-treesitter/nvim-treesitter"}
+		requires = {
+			{"nvim-tree/nvim-web-devicons"},
+			{"nvim-treesitter/nvim-treesitter"}
 		}
 	}
 	use "lukas-reineke/indent-blankline.nvim"
@@ -67,4 +67,14 @@ return require('packer').startup(function(use)
 		config = function() require("trouble").setup({}) end
 	}
 	use 'preservim/tagbar'
+	use {
+		'iamcco/markdown-preview.nvim',
+		run = function() vim.fn["mkdp#util#install"]() end,
+	}
+	use {
+		'neoclide/coc.nvim',
+		branch='release'
+	}
+	use 'mhinz/vim-startify'
+	use 'lervag/vimtex'
 end)

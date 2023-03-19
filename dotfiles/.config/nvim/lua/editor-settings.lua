@@ -1,6 +1,14 @@
 require('lualine').setup()
 
 vim.cmd[[colorscheme PaperColor]]
+vim.opt.background=light
+vim.opt.laststatus=2
+vim.opt.mouse="v"
+vim.opt.tabstop=4
+vim.opt.softtabstop=4
+vim.opt.wildmode={"longest", "list"}
+vim.opt.cc="88"
+vim.opt.mouse="a"
 
 vim.opt.termguicolors = true
 vim.cmd [[highlight IndentBlanklineIndent1 guifg=#E06C75 gui=nocombine]]
