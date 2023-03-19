@@ -16,6 +16,8 @@ files=(
     .vimrc
 )
 
+ln -s $PWN/.config/nvim ~/.config/nvim
+
 for file in "${files[@]}"; do
     ln -s $PWD/${file} $HOME/${file}
 done
