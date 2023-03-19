@@ -16,6 +16,8 @@ files=(
     .vimrc
 )
 
+rm -r $HOME/.config/nvim
+
 for file in "${files[@]}"; do
     if [ -e $HOME/${file} ]; then
         rm $HOME/${file};
