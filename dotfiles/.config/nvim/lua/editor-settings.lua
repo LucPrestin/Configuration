@@ -4,6 +4,7 @@ vim.cmd[[colorscheme PaperColor]]
 vim.opt.background=light
 vim.opt.laststatus=2
 vim.opt.mouse="v"
+vim.opt.expandtab=true
 vim.opt.tabstop=4
 vim.opt.softtabstop=4
 vim.opt.wildmode={"longest", "list"}

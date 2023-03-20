@@ -19,6 +19,8 @@ source $HOME/.aliases
 
 # python poetry
 export PATH="$PATH:/home/luc/.local/bin"
+unset PYTHONPATH
+unset PYTHONHOME
 
 # graalvm
 export PATH="$PATH:/home/luc/.bin/graalvm-ce-java17-22.3.0/bin"
