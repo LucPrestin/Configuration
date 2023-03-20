@@ -4,9 +4,9 @@ require('lualine').setup({
         }
 })
 
-vim.opt.termguicolors = true
-vim.g.t_co=256
-vim.g.background="light"
+vim.o.termguicolors = true
+vim.o.t_co=256
+vim.o.background="light"
 vim.api.nvim_command('colorscheme PaperColor')
 
 vim.opt.laststatus=2
