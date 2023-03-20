@@ -100,4 +100,10 @@ return require('packer').startup(function(use)
 	
 	-- latex support
 	use 'lervag/vimtex'
+
+        -- flutter setup
+        use 'dart-lang/dart-vim-plugin'
+        use 'thosakwe/vim-flutter'
+        use 'natebosch/vim-lsc'
+        use 'natebosch/vim-lsc-dart'
 end)
