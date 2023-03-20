@@ -6,6 +6,5 @@ require('file-explorer')
 require('custom-keys')
 require('debugging')
 require('syntax-highlighting')
-require('file-finder')
 require('linting')
 
