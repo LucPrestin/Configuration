@@ -1,8 +1,10 @@
 require('lualine').setup()
 
-vim.cmd[[ set t_Co=256 ]]
-vim.cmd[[ set background=light ]]
-vim.cmd[[colorscheme PaperColor]]
+vim.opt.termguicolors = true
+vim.g.t_co=256
+vim.g.background="light"
+vim.g.colorscheme="PaperColor"
+
 vim.opt.laststatus=2
 vim.opt.mouse="v"
 vim.opt.expandtab=true
