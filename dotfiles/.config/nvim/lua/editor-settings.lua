@@ -9,6 +9,8 @@ vim.o.t_co=256
 vim.o.background="light"
 vim.api.nvim_command('colorscheme PaperColor')
 
+vim.o.number=true
+
 vim.opt.laststatus=2
 vim.opt.mouse="v"
 vim.opt.expandtab=true
