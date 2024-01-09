@@ -10,6 +10,7 @@ vim.o.background="light"
 vim.api.nvim_command('colorscheme PaperColor')
 
 vim.o.number=true
+vim.wo.relativenumber=true
 
 vim.opt.laststatus=2
 vim.opt.mouse="v"

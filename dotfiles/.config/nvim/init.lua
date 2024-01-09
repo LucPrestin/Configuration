@@ -7,4 +7,5 @@ require('custom-keys')
 require('debugging')
 require('syntax-highlighting')
 require('linting')
+require('vimtex')
 

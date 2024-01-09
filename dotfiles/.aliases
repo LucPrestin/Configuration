@@ -5,8 +5,6 @@ alias nom='~/.bin/nom/nom.sh'
 alias mensa='~/.bin/mensa/getMenue.sh'
 alias pscom='python3 ~/.bin/photo-management/main.py'
 
-alias please='sudo'
-
 alias vim='nvim'
 
 alias system-upgrade='sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove && sudo snap refresh && omz update'
@@ -15,14 +13,7 @@ alias pcloud='~/.bin/pcloud/pcloud'
 
 alias itchio-butler='~/.bin/itchio-butler/butler'
 
-alias thesis='~/Documents/ITSE/Bachelorarbeit/thesis.sh'
-alias report='~/Documents/ITSE/Bachelorarbeit/report.sh'
-
 alias open='xdg-open'
-
-alias rails='bundle exec rails'
-
-alias native-image='mx -p /home/luc/Documents/Studium/Masterprojekt/graal/substratevm native-image'
 
 alias gs='git status'
 alias ga='git add'

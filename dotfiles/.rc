@@ -1,11 +1,9 @@
-# android sdk
-export PATH="$PATH:$HOME/.bin/Android/Sdk/build-tools/32.0.0"
-export PATH="$PATH:$HOME/.bin/Android/Sdk/platform-tools"
-export PATH="$PATH:$HOME/.bin/Android/Sdk/tools"
-
-# flutter
+# Android development
+export ANDROID_HOME="$HOME/.bin/Android/Sdk"
+export PATH="$PATH:$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/platform-tools"
 export PATH="$PATH:$HOME/.bin/flutter/bin"
-export CHROME_EXECUTABLE="$HOME/.local/share/flatpak/exports/bin/org.chromium.Chromium"
+
+export CHROME_EXECUTABLE="$HOME/.local/share/flatpak/app/org.chromium.Chromium/current/active/files/bin/chromium"
 
 # better yaourt colors
 export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
@@ -28,3 +26,7 @@ unset PYTHONHOME
 
 # vim
 export EDITOR=nvim
+
+# other
+export PATH="$PATH:/home/luc/.bin/ledger"
+
